@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>张宁海 - 个人简历</title>
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+        }
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 100%;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        h1 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            font-size: 16px;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+        .contact-item {
+            font-size: 14px;
+            color: #3498db;
+        }
+        h2 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin: 20px 0 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        p {
+            font-size: 15px;
+            margin-bottom: 10px;
+            text-align: justify;
+        }
+        ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+        .award-item, .project-item, .paper-item {
+            margin-bottom: 15px;
+        }
+        .award-year {
+            font-weight: bold;
+            color: #3498db;
+        }
+        .project-title, .paper-title {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+        .paper-authors {
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .skill {
+            background-color: #e8f4fc;
+            color: #3498db;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+        .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+.photo-item {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 150px; /* 设置固定高度或使用aspect-ratio */
+    background-color: #f0f0f0; /* 背景色用于占位 */
+}
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 改为contain以完整显示图片 */
+    object-position: center;
+}
+.photo-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>张宁海</h1>
+            <img src="照片.jpg" style="width: 100px;height: 100px;">
+            <div class="subtitle">中共党员 · 辽宁锦州人</div>
+            <div class="contact-info">
+                <span class="contact-item">电话: 17704265766</span>
+                <span class="contact-item">邮箱: wangyi17704265766@163.com</span>
+                <span class="contact-item">GitHub: GitHub-Ninghai</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>个人简介</h2>
+            <p>本科期间，我系统学习了高等数学等基础课和人工智能相关专业课，专业排名1/39名，连续3年获得各类奖学金和荣誉。在校四年来，我自主深入学习了计算机科学与技术、数据科学与大数据技术专业和人工智能专业的相关技术。并积极参与科技竞赛、社会实践等获国奖省奖20余项。</p>
+        </section>
+
+        <section>
+            <h2>教育背景</h2>
+            <p><strong>2020年-2024年</strong> 辽宁科技学院，电子与信息工程学院，人工智能专业</p>
+        </section>
+
+        <section>
+            <h2>技术特长</h2>
+            <div class="skills">
+                <span class="skill">熟悉机器学习和深度学习经典模型的原理及应用，能够进行模型搭建、训练和评估；</span>
+                <span class="skill">掌握目标检测模型 YOLO系列的训练和参数优化，解决常见的目标检测与分类任务；</span>
+                <span class="skill">具备全栈开发经验，熟悉前端 Vue.js 框架和后端 Flask 框架，能够独立完成 Web 应用的开发和服务器部署；</span>
+                <span class="skill">具备基本的爬虫能力和数据清洗能力；具备数据可视化能力，熟悉Visio进行科研绘图；</span>
+                <span class="skill">解大模型测评技术和DeepSeek训练流程，具有使用多显卡（RTXA6000）部署大模型和Agent开发相关经验。</span>
+                <!-- <span class="skill">数据可视化</span>
+                <span class="skill">大模型部署</span>
+                <span class="skill">Agent开发</span> -->
+            </div>
+        </section>
+
+        <section>
+            <h2>获奖情况</h2>
+            <div class="award-item">
+                <span class="award-year">2020年-2024年</span> 优秀团员
+            </div>
+            <div class="award-item">
+                <span class="award-year">2020年-2024年</span> 优秀学生/干部
+            </div>
+            <div class="award-item">
+                <span class="award-year">2020年-2021年</span> 校二等奖学金
+            </div>
+            <div class="award-item">
+                <span class="award-year">2021年-2022年</span> 校一等奖学金
+            </div>
+            <div class="award-item">
+                <span class="award-year">2022年-2023年</span> 省政府奖学金
+            </div>
+            <div class="award-item">
+                <span class="award-year">2022年</span> 优秀班导生
+            </div>
+            <div class="award-item">
+                <span class="award-year">2024届</span> 辽宁省优秀毕业生
+            </div>
+        </section>
+
+        <section>
+            <h2>科研与竞赛</h2>
+            <div class="project-item">
+                <div class="project-title">2022年中国大学生计算机设计大赛辽宁省二等奖2项</div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">2022年全国大学生数学建模竞赛辽宁赛区本科组二等奖</div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">2022辽宁省"互联网+"大学生创新创业大赛银奖1项铜奖1项</div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">2022年省级大学生创新项目-基于大数据的电子病例管理系统</div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">2023年国家级大学生创新项目-基于计算机视觉在新冠疫情形势下的智能监管分析系统</div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">2023年全国大学生数学建模竞赛辽宁赛区本科组一等奖</div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">2023年中国大学生计算机设计大赛国赛二等奖2项、三等奖2项</div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">2024年北京航天情报与信息研究所国防科技信息数据挖掘大赛二等奖</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>毕业论文</h2>
+            <div class="project-title">多模态数据融合在Segment Anything大模型中的研究与应用</div>
+            <p>本文研究了多模态数据融合在Segment Anything（SAM）大模型中的应用，基于开放词汇表的SAM与CLIP融合模型（SAM2CLIP、CLIP2SAM、OV-SAM）实现了能够点击目标分割并识别物体的交互式图像-文本多模态SAM应用。</p>
+            <p>同时，本文研究了基于EfficientViT SAM与YOLO-World的图像目标检测与分割模型，实现了能够输入prompt文本检测图像的文本-图像多模态SAM应用，并在复杂环境下表现良好的分割与识别能力。</p>
+            <p>基于前面的研究，本文提出了一种全新的目标检测与分割技术，即基于YOLOv9和EfficientViT SAM的多目标分割检测模型，在RTX 4060 GPU上推理比最近（2024年5月）提出的YOLOv9结合SAM的任务速度高约8.12倍，实现了高速批量检测与分割任务。</p>
+        </section>
+
+        <section>
+            <h2>发表论文</h2>
+            <div class="paper-item">
+                <div class="paper-title">1. Implementation of campus supervision system based on Yolov5 and SlowFast optimization model</div>
+                <div class="paper-authors">Ninghai Zhang, Yanchao Wang</div>
+                <div>Proc. SPIE, Third International Conference on Green Communication, Network, and Internet of Things (CNIoT 2023). 第一作者</div>
+            </div>
+            <div class="paper-item">
+                <div class="paper-title">2. The Yolov5 model combined with EfficientFormerV2 for lightweight applications in vehicle detection</div>
+                <div class="paper-authors">D. Zhang, N. Zhang, N. Hu and J. Jiang</div>
+                <div>IEEE,2023 3rd International Conference on Computer Science and Blockchain (CCSB), Shenzhen, China, 2023. 通讯作者</div>
+            </div>
+            <div class="paper-item">
+                <div class="paper-title">3. 筑梦一体化服务平台设计与实现</div>
+                <div class="paper-authors">张宁海, 戴子云, 何泳欣, 金鑫, 车欣雨, & 卢意</div>
+                <div>教育学研究, ISSN:2190-187X. 第一作者</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>软件著作权</h2>
+            <div class="project-item">
+                <div class="project-title">计算机视觉教辅平台</div>
+                <div>第一作者</div>
+            </div>
+            <div class="project-item">
+                <div class="project-title">基于知识图谱的智慧农业可视化平台</div>
+                <div>第二作者</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>活动照片</h2>
+            <div class="photo-grid">
+                <div class="photo-item">
+                    <img src="1.jpg" alt="国际学术会议汇报">
+                    <div class="photo-caption">图1: 参加2023第五届人工智能技术与应用国际学术会议英文口头汇报</div>
+                </div>
+                <div class="photo-item">
+                    <img src="2.jpg" alt="计算机设计大赛分享">
+                    <div class="photo-caption">图2: 参加辽宁省2024计算机设计大赛启动会做获奖分享</div>
+                </div>
+                <div class="photo-item">
+                    <img src="3.jpg" alt="创新创业年会">
+                    <div class="photo-caption">图3: 参加2024辽宁省创新创业年会做学生代表</div>
+                </div>
+                <div class="photo-item">
+                    <img src="4.jpg" alt="参加2024北京航天科工二院北京航天情报与信息研究所举办的国防类科技比赛获奖">
+                    <div class="photo-caption">图4: 国防科技比赛获奖</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
